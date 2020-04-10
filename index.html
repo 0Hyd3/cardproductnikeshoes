@@ -14,6 +14,9 @@
   min-height: 100vh;
 }
 img{
+    position: fixed;
+  top: -8%;
+  left: 0%;
   border-radius: 50px;
   opacity:0.9;
   transition: 0.5s;
@@ -22,7 +25,7 @@ img{
 }
 h1{
   	   transition: transform 2s;
-    font-size: 50px;
+    font-size: 60px;
 color: white;
  font-family: 'Big Shoulders Display', cursive;
 }
@@ -31,6 +34,10 @@ color: white;
        transform: scale(1.5)
     top:80%;
  
+}
+img:hover .card{
+        
+  
 }
 img, #parent {
     cursor: pointer;
@@ -43,7 +50,9 @@ img, #parent {
 }
 .card header {
     position:absolute;
-  
+ 
+  top: 120%;
+  left: 0%;
     padding: 1px;
     border-radius:  25px;
    width: 450px;
@@ -52,10 +61,11 @@ img, #parent {
     opacity:0;
 }
 .card:hover > header{
+  
     opacity:1;
          width: 450px;
          height: 90px;
-             
+             transform: translateY(-120px);
 }
 
  .card {
@@ -72,7 +82,7 @@ border-radius: 500px;
 }
 .card:hover{
 
-   transform: scale(1.04)
+   transform: scale(1.08)
 }
   .centeri{ 
   position: fixed;
